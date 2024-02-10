@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cooking</title>
+
+<link rel="stylesheet" href="main.css">
+
+<!-- Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- Googlefont CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+
+  .custom-nav-link{
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+  }
+
+  .custom-nav-link-home{
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+  }
+
+  #cooking-wrapper{
+   background-color:#d1b7d1c4;
+   padding: 50px 0px;
+     }
+
+  #cooking-header h3{
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #cooking-header p{
+    font-family: 'Lora', serif;
+    font-size: 17px;
+  }
+
+  .cooking-text{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  h4{
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'Lora', serif;
+  }
+  .container{
+    width: 1100px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container th{
+    font-weight: 800;
+    color: #9b299be0;
+    font-size: 17px;
+  }
+
+  #cooking-gallery{
+    background-color:#e6e8fa;
+    width: 1350px;
+    height: 330px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 45px;
+    opacity: 0.5;
+  }
+
+  #cooking-gallery:hover{
+    opacity: 1;
+    transition: all 1s linear;
+  }
+
+  #cooking-gallery h5{
+    padding-top: 15px;
+    font-family: 'Lora', serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.featured-meal1, .featured-meal2, .featured-meal3, .featured-meal4, .featured-meal5{
+    background-color: thistle;
+    padding: 3px 5px;
+  }
+
+  .showimage-meal1 {
+  display:none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 670px;
+  left: 65px;
+  border-radius: 15px;
+}
+
+  .showimage-meal2 {
+  display:none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 670px;
+  left: 330px;
+  border-radius: 15px;
+}
+  .showimage-meal3 {
+  display:none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 670px;
+  left: 595px;
+  border-radius: 15px;
+}
+
+  .showimage-meal4 {
+  display:none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 670px;
+  left: 860px;
+  border-radius: 15px;
+}
+
+  .showimage-meal5 {
+  display:none;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 670px;
+  left: 1125px;
+  border-radius: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md fixed-top" style="background-color: #B08CB8;"> 
+  <div class="container-fluid">
+  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto m-1.7">
+        <li class="nav-item">
+          <a class="nav-link active custom-nav-link-home" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Interest
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-nav-dropdown" href="cooking.html">Cooking</a></li>
+            <li><a class="dropdown-item custom-nav-dropdown" href="travel.html">Traveling</a></li>
+            <li><a class="dropdown-item custom-nav-dropdown" href="music.html">Music & Concert</a></li>
+          </ul>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link active custom-nav-link" aria-current="page" href="resume.html">Resume</a>
+        </li>
+       
+         <li class="nav-item">
+          <a class="nav-link active custom-nav-link" aria-current="page" href="../index.html" target="_blank">Portfolio</a>
+        </li>
+
+      </ul>
+
+       <div class="text-on-right"><em>Hanzhang Sun</em></div>
+
+    </div>
+  </div>
+</nav>
+
+<div id="cooking-wrapper">
+
+<div id="cooking-header">
+
+  <h3>Cooking</h3>
+  <p class="cooking-text">After coming to LA, I like to spend time with my friends to cook traditional Chinese dishes. We often gather to prepare a feast during traditional Chinese festivals, like the Chinese New Year and Mid-Autumn Festival. From shopping for ingredients to serving the dishes, we usually keep busy for an entire afternoon!</p>
+
+</div>
+
+<div id="cooking-content">
+<h4>My Menu</h4>
+<div class="container">
+<table class="table table-hover table-light table-striped">
+<thead>
+  <tr>
+    <th scope="col">Dish Name</th>
+    <th scope="col">Main Ingredients</th>
+    <th scope="col">Seasonings</th>
+  </tr>
+  </thead>
+
+ <tbody class="table-group-divider">
+    <tr>
+      <td><span class="featured-meal1">Tomato  and  Egg  Noddles</span></td>
+      <td>Fresh tomatoes, eggs, noodles, vegetables (optional)</td>
+      <td>Salt, tomato sauce</td>
+    </tr>
+
+    <tr>
+      <td><span class="featured-meal2">Wonton</span></td>
+      <td>Wonton wrappers, ground pork, vegetables (optional), water</td>
+      <td>Peanut oil, salt, soy sauce</td>
+    </tr>
+
+    <tr>
+      <td><span class="featured-meal3">Lemon Chicken and Shrimp</span></td>
+      <td>Chicken, shrimp, lemon, garlic, cilantro</td>
+      <td>Salt, pepper, cornstarch, soy sauce, sugar</td>
+    </tr>
+
+    <tr>
+      <td><span class="featured-meal4">Cucumber in Sauce</span></td>
+      <td>Cucumber, peanuts, cilantro </td>
+      <td>Garlic, ginger, sesame oil, rice vinegar, soy sauce</td>
+    </tr>
+
+     <tr>
+      <td><span class="featured-meal5">Stir-Fry meat</span></td>
+      <td>Pork, green pepper</td>
+      <td>Sesame oil, soy sauce, salt, oyster sauce</td>
+    </tr>
+
+     </tbody>
+    </table>
+  </div>
+
+  <div id="cooking-gallery">
+    <h5>Discover the hidden cooking gallery by clicking on the dish names (highlighted in purple) in the table above!</h5>
+  <div id="featured-meal1">
+      <img class="showimage-meal1" src="img/meal-1.jpeg" alt="Meal 1">
+    </div>
+
+  <div id="featured-meal2">
+      <img class="showimage-meal2" src="img/meal-2.jpeg" alt="Meal 2">
+    </div>
+
+  <div id="featured-meal3">
+      <img class="showimage-meal3" src="img/meal-3.jpeg" alt="Meal 3">
+    </div>
+
+  <div id="featured-meal4">
+      <img class="showimage-meal4" src="img/meal-4.jpeg" alt="Meal 4">
+    </div>
+
+  <div id="featured-meal5">
+      <img class="showimage-meal5" src="img/meal-5.jpeg" alt="Meal 5">
+    </div>
+
+  </div>  <!-- #cooking-gallery -->
+</div> <!-- #cooking-content -->
+
+</div> <!-- #cooking-wrapper -->
+
+
+ <div id="footer">
+ <p>©2023 Hanzhang Sun</p>
+</div> 
+
+<!-- Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- Add jQuery script below -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+  <script>
+  $(document).ready(function() {
+    // jQuery code here.
+  // alert("Hello World");
+
+    $('.featured-meal1').click(function() {
+      $('.showimage-meal1').toggle(1000);
+    });
+
+    $('.featured-meal2').click(function() {
+      $('.showimage-meal2').toggle(1000);
+    });
+
+    $('.featured-meal3').click(function() {
+      $('.showimage-meal3').toggle(1000);
+    });
+
+    $('.featured-meal4').click(function() {
+      $('.showimage-meal4').toggle(1000);
+    });
+
+     $('.featured-meal5').click(function() {
+      $('.showimage-meal5').toggle(1000);
+    });
+
+  });
+  </script>
+
+</body>
+</html>

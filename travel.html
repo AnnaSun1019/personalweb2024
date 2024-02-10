@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traveling</title>
+
+<link rel="stylesheet" href="main.css">
+
+<!-- Navbar Bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- Googlefont CSS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+  
+  .custom-nav-link{
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+  }
+
+  .custom-nav-link-home{
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+  }
+
+  #travel-wrapper{
+   background-color:#d1b7d1c4;
+   padding: 50px 0px;
+  }
+
+  #travel-header h3{
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #travel-header p{
+    font-family: 'Lora', serif;
+    font-size: 17px;
+  }
+
+  .travel-text{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #travel-gallery{
+    background-color:#e6e8fa;
+    width: 1150px;
+    height: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+    .landscape{
+    width:auto;
+    height:100%;
+  }
+
+   .portrait{
+    width:100%;
+    height:auto;
+  }
+
+  .thumbnail-row1-1 {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+  .thumbnail-row1-2 {
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 20px;
+      left: 300px;
+    }
+
+  .thumbnail-row1-3 {
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 20px;
+      left: 580px;
+    }
+
+  .thumbnail-row1-4 {
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 20px;
+      left: 860px;
+    }
+
+  .thumbnail-row2-1 {
+      margin: 10px;
+      width: 340px;
+      height: 450px;
+      position: absolute;
+      top: 340px;
+      left: 20px;
+    }
+
+    .thumbnail-row2-2 {
+      margin: 10px;
+      width: 340px;
+      height: 450px;
+      position: absolute;
+      top: 340px;
+      left: 395px;
+    }
+
+    .thumbnail-row2-3 {
+      margin: 10px;
+      width: 340px;
+      height: 450px;
+      position: absolute;
+      top: 340px;
+      left: 770px;
+    }
+
+      .thumbnail-row3-1 {
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 860px;
+      left: 30px;
+    }
+
+     .thumbnail-row3-2 {
+      margin: 10px;
+      width: 260px;
+      height: 250px;
+      position: absolute;
+      top: 860px;
+      left: 300px;
+    }
+
+     .thumbnail-row3-3 {
+      margin: 10px;
+      width: 260px;
+      height: 250px;
+      position: absolute;
+      top: 860px;
+      left: 580px;
+    }
+
+     .thumbnail-row3-4 {
+      margin: 10px;
+      width: 260px;
+      height: 250px;
+      position: absolute;
+      top: 860px;
+      left: 860px;
+    }
+
+  .thumbnail-row1-1, .thumbnail-row1-2, .thumbnail-row1-3, .thumbnail-row1-4, .thumbnail-row2-1, .thumbnail-row2-2, .thumbnail-row2-3, .thumbnail-row3-1, .thumbnail-row3-2, .thumbnail-row3-2, .thumbnail-row3-3, .thumbnail-row3-4{transition: all 1s linear}
+
+    .thumbnail-row1-1:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row1-2:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row1-3:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row1-4:hover{
+      transform:scale(1.1);
+    }
+
+     .thumbnail-row2-1:hover{
+      transform:scale(1.06);
+    }
+
+    .thumbnail-row2-2:hover{
+      transform:scale(1.06);
+    }
+
+    .thumbnail-row2-3:hover{
+      transform:scale(1.06);
+    }
+
+    .thumbnail-row3-1:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row3-2:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row3-3:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-row3-4:hover{
+      transform:scale(1.1);
+    }
+
+    .thumbnail-text p{
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+    }
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md fixed-top" style="background-color: #B08CB8;"> 
+  <div class="container-fluid">
+  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto m-1.7">
+        <li class="nav-item">
+          <a class="nav-link active custom-nav-link-home" aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Interest
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-nav-dropdown" href="cooking.html">Cooking</a></li>
+            <li><a class="dropdown-item custom-nav-dropdown" href="travel.html">Traveling</a></li>
+            <li><a class="dropdown-item custom-nav-dropdown" href="music.html">Music & Concert</a></li>
+          </ul>
+        </li>
+
+          <li class="nav-item">
+          <a class="nav-link active custom-nav-link" aria-current="page" href="resume.html">Resume</a>
+        </li>
+       
+         <li class="nav-item">
+          <a class="nav-link active custom-nav-link" aria-current="page" href="../index.html" target="_blank">Portfolio</a>
+        </li>
+
+      </ul>
+
+       <div class="text-on-right"><em>Hanzhang Sun</em></div>
+
+    </div>
+  </div>
+</nav>
+
+<div id="travel-wrapper">
+
+<div id="travel-header">
+
+  <h3>Traveling</h3>
+  <p class="travel-text">Traveling is one of my favorite ways to relieve stress, as it allows me to briefly set aside worries and immerse myself in understanding the people and culture of a new place. I love documenting my travels with family and friends through photography and vlogging. </p>
+  <p class="travel-text">Here are some of the places I have visited. ･ᴗ･ </p>
+
+</div>
+
+<div id="travel-gallery">
+
+      <div class="thumbnail-row1-1">
+        <img src="img/travel-1.jpeg" alt="Butterfly Flower" class="landscape">
+         <div class="thumbnail-text">
+          <p>Desert Botanical Garden</p>
+          <p>Phoenix, Arizona</p>
+        </div>
+       
+      </div> 
+
+      <div class="thumbnail-row1-2">
+        <img src="img/travel-2.jpeg" alt="SD Zoo" class="landscape">
+        <div class="thumbnail-text">
+          <p>San Diego Zoo Safari Park</p>
+        </div>
+      </div> 
+
+      <div class="thumbnail-row1-3">
+        <img src="img/travel-3.jpeg" alt="Mountain" class="landscape">
+        <div class="thumbnail-text">
+          <p>Kanas, China</p>
+        </div>
+      </div> 
+
+       <div class="thumbnail-row1-4">
+        <img src="img/travel-4.jpeg" alt="Mail Box" class="landscape">
+        <div class="thumbnail-text">
+          <p>Sandbank Island Shamian</p>
+          <p>Guangzhou, China</p>
+        </div>
+      </div> 
+
+         <div class="thumbnail-row2-1">
+        <img src="img/travel-5.jpeg" alt="Hot Air Balloon" class="portrait">
+        <div class="thumbnail-text">
+          <p>San Diego Zoo Safari Park</p>
+        </div>
+      </div> 
+
+      <div class="thumbnail-row2-2">
+        <img src="img/travel-6.jpeg" alt="Dujiangyan" class="portrait">
+        <div class="thumbnail-text">
+          <p>Dujiangyan Irrigation System</p> 
+          <p>Sichuan, China</p>
+        </div>
+      </div> 
+
+      <div class="thumbnail-row2-3">
+        <img src="img/travel-7.jpeg" alt="Cactus" class="portrait">
+        <div class="thumbnail-text">
+          <p>San Diego Zoo Safari Park</p>
+        </div>
+      </div> 
+
+        <div class="thumbnail-row3-1">
+        <img src="img/travel-8.jpeg" alt="Qingdao Beer" class="landscape">
+        <div class="thumbnail-text">
+          <p>The World of Tsingtao</p>
+          <p>Qingdao, China</p>
+        </div>
+      </div> 
+
+         <div class="thumbnail-row3-2">
+        <img src="img/travel-9.jpeg" alt="Desert" class="landscape">
+        <div class="thumbnail-text">
+          <p>Kumtag Desert</p>
+          <p>Turpan, China</p>
+        </div>
+      </div>
+
+      <div class="thumbnail-row3-3">
+        <img src="img/travel-10.jpeg" alt="Outdoor view" class="landscape">
+        <div class="thumbnail-text">
+          <p>Kanas, China</p>
+        </div>
+      </div> 
+
+      <div class="thumbnail-row3-4">
+        <img src="img/travel-11.jpeg" alt="Museum" class="landscape">
+        <div class="thumbnail-text">
+          <p>Shanxi History Museum</p> 
+          <p>Xi'an, China</p>
+        </div>
+      </div>
+
+  </div> <!-- #travel-gallery -->
+</div> <!-- #travel-wrapper -->
+
+
+ <div id="footer">
+ <p>©2023 Hanzhang Sun</p>
+</div> 
+
+<!-- Navbar Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
